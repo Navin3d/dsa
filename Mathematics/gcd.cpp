@@ -1,3 +1,5 @@
+//EUCLIDEAN ALGORITHM TO FIND GCD OF TWO NUMBERS
+//OPTIMIZED SOLUTION TO FIND GCD
 #include <iostream>
 using namespace std;
 
