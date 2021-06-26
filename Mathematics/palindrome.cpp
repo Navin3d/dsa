@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool palindrome(int n)
+bool palindrome(int n)              //FUN FACT: A SINGLE DIGIT NUMBER IS ALWAYS A PALINDROM:)
 {
     int temp = n;
     int result = 0;
