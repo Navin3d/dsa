@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-int countDigit(int n)
+int countDigit(int n)                   // Time complexity = O(d),   where d is the number of digits of n
 {
     int count = 0;
     while (n != 0)
