@@ -16,7 +16,7 @@ int main()
 
 
 int countDigit(int n){
- return floor(log10(n) + 1);     
+ return floor(log10(n) + 1);     // constant time complexity
 }
 
 /*
