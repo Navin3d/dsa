@@ -3,7 +3,7 @@ using namespace std;
 
 void KthBit(int n, int k)
 {
-	if (n & (1 << (k - 1)))
+	if (n & (1 << (k - 1)) != 0)
 		cout << "SET";
 	else
 		cout << "NOT A SET";
