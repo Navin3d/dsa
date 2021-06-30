@@ -3,7 +3,7 @@ using namespace std;
 
 void isKthBitSet(int n, int k) 
 { 
-	if ((n >> (k - 1)) & 1)  //RIGHT SHIFT OPERATOR
+	if ((n >> (k - 1)) & 1  == 1)  //RIGHT SHIFT OPERATOR
 		cout << "SET"; 
   
   /* 
