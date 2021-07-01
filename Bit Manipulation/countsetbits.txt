@@ -1,0 +1,6 @@
+   THREE METHODS TO COUNT SET BIT
+   
+   Naive method                   https://github.com/ishani1124/DSA-SelfPaced/blob/main/Bit%20Manipulation/countsetbit1.cpp
+   Brian Kernighan Algorithm      https://github.com/ishani1124/DSA-SelfPaced/blob/main/Bit%20Manipulation/setbit2.cpp
+   Look Up method            
+   
