@@ -6,7 +6,7 @@ using namespace std;
 unsigned int countSetBits(int n) 
 { 
        unsigned int count = 0; 
-       while (n) { 
+       while (n>0) { 
           n &= (n - 1); 
           count++; 
        } 
