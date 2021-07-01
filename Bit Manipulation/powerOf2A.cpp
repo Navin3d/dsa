@@ -6,7 +6,7 @@ using namespace std;
 bool isPow2(int n)
 {
     if(n == 0)
-        return true;
+        return false;
     while(n != 1)
     {
         if(n % 2 != 0)
