@@ -1,3 +1,5 @@
+// YOUTUBE LINK     https://www.youtube.com/watch?v=VWOUh4w_zVI
+
 //EUCLIDEAN ALGORITHM TO FIND GCD OF TWO NUMBERS
 //OPTIMIZED SOLUTION TO FIND GCD
 #include <iostream>
