@@ -11,7 +11,7 @@ int main()
     int n;
     cin>>n;
     cin.get();
-    for(int i=0 ; i<n;i++){
+    for(int i=0 ; i<n;i++){        //while(n--) {
         cin.getline(a,1000);
         int len = strlen(a);
         if(len>largest_len){
