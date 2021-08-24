@@ -20,7 +20,6 @@ int main()
    
     int a[] = {1,5,7,9,12,17,24};
     int size = sizeof(a)/sizeof(a[0]);
-    int key = 5;
     selection_sort(a,size);
    for(int i=0;i<size;i++)
      cout<<a[i]<<" ";
