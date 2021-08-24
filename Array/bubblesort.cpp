@@ -3,7 +3,7 @@ using namespace std;
 
 void bubble_sort(int a[] , int n){
     for(int i=1;i<n;i++){
-        for(int j=0 ; j<(n-i-1);j++){
+        for(int j=0 ; j<(n-1);j++){
             if(a[j]>a[j+1])
                swap(a[j] , a[j+1]);
         }
