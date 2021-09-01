@@ -15,7 +15,7 @@ int main() {
   int i=0,j=0,k=0;
   for(i=0;i<n;i++){
     for(j=i;j<n;j++){
-      currentSum=0;
+      currentSum=0;       //important
       for(k=i;k<=j;k++){
         currentSum += a[k];
       }
