@@ -10,10 +10,26 @@ bool isSort(int a[], int n){
     return true;
 }
 
+// Naive
+// bool isSortNaive(int a[], int n){
+// 	for(int i=0;i<n;i++){
+// 		for(int j=i+1;j<n;j++){     //j=1  1<6
+//             if(a[j]<a[i])
+//             	  return false;
+// 		}
+// 	}
+
+// 	return true;
+// }
+
+
+
 int main()
 {
     int a[] = {1,7,9,12,34};
     int size = sizeof(a)/sizeof(a[0]);
+    
+    
     if(isSort(a,size))
        cout<<"Sorted";
     else
