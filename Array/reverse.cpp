@@ -4,9 +4,13 @@ using namespace std;
 void reverse(int a[] , int n){
     int start =0 , end= n-1;
     while(start<end){
-        int temp =a[start];
+        
+        //swap  
+        int temp =a[start];          //   swap(a[start] , a[end]);
          a[start] = a[end];
          a[end] = temp;
+        
+        
          end--;
          start++;
     }
