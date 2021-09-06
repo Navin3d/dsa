@@ -1,8 +1,8 @@
-//O(n)
+
 #include <iostream>
 using namespace std;
 
-bool isSort(int a[], int n){
+bool isSort(int a[], int n){                       //o(n)
     for(int i=1;i<n;i++){
         if(a[i]<a[i-1])
           return false;
@@ -11,9 +11,9 @@ bool isSort(int a[], int n){
 }
 
 // Naive
-// bool isSortNaive(int a[], int n){
+// bool isSortNaive(int a[], int n){                 //o(n^2)
 // 	for(int i=0;i<n;i++){
-// 		for(int j=i+1;j<n;j++){     //j=1  1<6
+// 		for(int j=i+1;j<n;j++){     
 //             if(a[j]<a[i])
 //             	  return false;
 // 		}
