@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void moveZeroN(int a[] , int n){           //naive
+void moveZeroN(int a[] , int n){           //naive tc-> o(n^2)
    for(int i=0;i<n ;i++){
        if(a[i] == 0){
            for(int j=i; j<n ; j++){
@@ -14,7 +14,7 @@ void moveZeroN(int a[] , int n){           //naive
        cout<<a[i]<<" ";
 }
 
-void moveZeroE(int a[] , int n){              //effi
+void moveZeroE(int a[] , int n){              //effi  tc -> o(n)
     int count= 0;
     for(int i=0;i<n;i++){
         if(a[i]  != 0 ){
