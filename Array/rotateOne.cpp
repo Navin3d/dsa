@@ -1,4 +1,5 @@
 //left rotate by 1 (counter-clockwise)
+// time complexity is o(n) and auxiliary space is o(1)
 #include <iostream>
 using namespace std;
 
