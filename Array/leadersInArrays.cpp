@@ -1,5 +1,5 @@
 //leader in arrays
-// prints all the elements which is greater than all it's element on the right
+// prints all the elements which is greater than all it's element on the right side(leader)
 #include <iostream>
 using namespace std;
 
@@ -9,8 +9,9 @@ void leadersNaive(int a[], int n){
      for(int i=0;i<n ;i++){
            int flag=0;
      	  for(int j=i+1;j<n;j++){
-     	  //	if(a[i]   a[j])
-     	  	if(a[j] >= a[i]){
+     	  //	if(a[i]  <= a[j])
+     	  	if(a[j] >= a[i]){       //"equal to" is imp
+// because eg: 5,3,1,3,2 the 3 at the index 3 is the leader not the 3 at index 1
      	  		flag= 1;
      	  		break;
      	  	}
