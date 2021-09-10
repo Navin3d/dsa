@@ -23,7 +23,7 @@ int main(){
 	int D; //2
 	cout<<"Enter D: ";
 	cin>>D;
-    rotateByD(a,n,D);        //time complexity is o(nd) and aux space is o(d)
+    rotateByD(a,n,D);        //time complexity is o(n) and aux space is o(d)
     for(int i=0;i<n;i++)
     	 cout<<a[i]<<" ";
 }
