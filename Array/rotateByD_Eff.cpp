@@ -2,7 +2,6 @@
 #include <iostream>
 using namespace std;
 
-//rotate one, D times
 void rotateByD(int a[], int n, int D){
 	int temp[D];
 	for(int i=0 ; i<D ;i++){      
