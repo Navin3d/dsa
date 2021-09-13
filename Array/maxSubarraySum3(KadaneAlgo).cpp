@@ -17,7 +17,7 @@ int main() {
   for(int i=0;i<n;i++){
     currentSum +=a[i];
     if(currentSum<0){
-      cs=0;
+      currentSum=0;
     }
     maxSum = max(currentSum, maxSum);
   }
