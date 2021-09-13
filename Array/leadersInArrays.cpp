@@ -30,7 +30,7 @@ void leadersEff(int a[] , int n){
         cout<<currentLeader<<" ";     //last element is a leader
 
         for(int i= n-2 ; i>=0 ;i--){  //from second last to first element
-               if(currentLeader  <  a[i]){
+               if(currentLeader  <=  a[i]){
                     cout<<a[i]<<" ";
                     currentLeader = a[i];
                }
