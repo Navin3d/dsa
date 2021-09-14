@@ -1,5 +1,5 @@
 # DSA-SelfPaced
 
-The Problems that I am solving while learning DSA.
+The Problems that I solve while learning DSA.
 
-Currently, as a beginner I am starting with mathematics
+
