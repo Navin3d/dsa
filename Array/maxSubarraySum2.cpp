@@ -29,7 +29,8 @@ int main() {
   int i=0,j=0;
   for(i=0;i<n;i++){
     for(j=i;j<n;j++){
-      currentSum=cs[j] - cs[i-1];   //important
+      currentSum= i>0? cs[j] - cs[i-1] : cs[j];   //important
+      // if i=0, currentSum = cs[j]-cs[-1] so to avoid this, we use the above condition
         if(currentSum>maxSum){
           maxSum= currentSum;
           left=i;
