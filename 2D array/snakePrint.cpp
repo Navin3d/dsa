@@ -2,9 +2,10 @@
 using namespace std;
 
 void snakePrint(int a[100][100] , int row , int col){
+
      
     for(int i=0 ; i<row ; i++){
-        if(i%2 == 0){      //even
+        if(i%2 == 0){      //checking row is EVEN
           for(int j= 0; j < col ; j++)
               cout<<a[i][j]<<" ";
             }
