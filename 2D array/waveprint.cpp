@@ -17,11 +17,11 @@ int main() {
       // check if j is even or odd
         if(j%2 == 0){    // even
           for(int i=0;i<row ; i++)
-             cout<<a[row][col]<<" ";
+             cout<<a[i][j]<<" ";
         }
-        else {         // od2d
+        else {         // odd
             for(int i=row-1 ; i>=0 ;i--)
-                cout<<a[row][col]<<" ";
+                cout<<a[i][j]<<" ";
         }
   }
    
