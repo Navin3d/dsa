@@ -1,43 +1,39 @@
 #include <iostream>
 using namespace std;
 
-void staircaseSearch(int a[100][100], int n, int key){
-    int startRow =0 ;
-    int endCol=n-1;
-    int flag=0;
-    while(startRow<n and endCol>=0){
-        if(key == a[startRow][endCol]){
-            cout<<"Found at a["<<startRow<<"]["<<endCol<<"]";
-            flag = 1;
-            break;
+void staircaseSearch(int a[100][100], int r, int c, int key){
+
+    int j = c-1;
+    int i = 0;
+
+    if(key<a[0][0] or key>a[r-1][c-1])
+             cout<<"Key not found"<<endl;
+
+    while(i<=r-1 and j>=0){
+        if(a[i][j] == key){
+                  cout<<"Found at a["<<i<<"]["<<j<<"]"<<endl;
+         break;
         }
-        
-       else if(key<a[startRow][endCol]){
-           endCol--;
-       }
-       
-       else if(key>a[startRow][endCol]){
-           startRow++;
-       }
+        else if(a[i][j] > key)
+              j--;
+        else
+          i++;
     }
-    
-    if(flag == 0)
-      cout<<"Key Not found ";
 }
 
 int main()
 {
-   int n;
-   cin>>n;
+   int r,c;
+   cin>>r>>c;
    int a[100][100];
-   for(int i=0;i<n;i++){
-       for(int j=0;j<n ; j++){
+   for(int i=0;i<r;i++){
+       for(int j=0;j<c ; j++){
            cin>>a[i][j];
        }
    }
    
    int key;
    cin>>key;
-   staircaseSearch(a , n ,key );
+   staircaseSearch(a , r,c ,key );
     
 }
