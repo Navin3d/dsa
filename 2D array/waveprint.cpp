@@ -19,11 +19,11 @@ int main() {
           for(int i=0;i<row ; i++)
              cout<<a[row][col]<<" ";
         }
-        else {         // odd
+        else {         // od2d
             for(int i=row-1 ; i>=0 ;i--)
                 cout<<a[row][col]<<" ";
         }
-    }
+  }
    
     return 0;
 }
