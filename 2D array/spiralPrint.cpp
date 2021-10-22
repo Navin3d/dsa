@@ -28,7 +28,7 @@ void spiralPrint(int a[][10] , int r , int c){
         
 
         //first col
-        for(int i=endRow-1 ; i>=startRow+1 ; i--){    
+        for(int i=endRow-1 ; i>=startRow+1 ; i--){           //IMPORTANT
             if(startCol==endCol){
                 break;
             }    
