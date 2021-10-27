@@ -14,6 +14,10 @@ void moveZeroN(int a[] , int n){           //naive tc-> o(n^2)
        cout<<a[i]<<" ";
 }
 
+
+// input = [0,1,0,3,12]
+// Output: [1,3,12,0,0]
+
 void moveZeroE(int a[] , int n){              //effi  tc -> o(n)
     int count= 0;
     for(int i=0;i<n;i++){
