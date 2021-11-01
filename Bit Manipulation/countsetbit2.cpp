@@ -1,5 +1,4 @@
 //Brian and Kerningham Algorithm
-
 #include <bits/stdc++.h> 
 using namespace std; 
 
