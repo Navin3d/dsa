@@ -3,13 +3,15 @@ using namespace std;
 
 void KthBit(int n, int k)
 {
-	if (n & (1 << (k - 1)) != 0)
-		cout << "SET";
-	else
-		cout << "NOT A SET";
+  int use = 1<<k;
+    if((n&use) == 0)
+       cout<<0;
+
+    else
+      cout<<1;	
 }
 
-// Driver code
+
 int main()
 {
 	int n, k;
