@@ -1,4 +1,4 @@
-//Print one configuration
+ //Number of configuration
 
 #include <iostream>
 using namespace std;
@@ -58,19 +58,20 @@ bool canPlace(int board[][20], int n ,int x,int y)
         j++;
     }
 
-    return true; 
+    return true;
 }
 
- bool solveNQueen(int board[][20], int n, int i)
+ int NQueenWays(int board[][20], int n, int i)
   {  
       //base case
       if(i==n)
       {
-          printArray(board, n);
+          //printArray(board, n);
           
-          return true;
+          return 1;
       }
 
+int ways =0;
 //rec case
 //try placing Q in each row
 for(int j = 0;j<n ; j++)
@@ -79,18 +80,15 @@ for(int j = 0;j<n ; j++)
     if(canPlace(board , n , i, j))
     {
          board[i][j] = 1; 
-         bool success = solveNQueen(board , n ,i+1);
-         if(success)
-         {
-             return true;
-         }
+         ways = ways + NQueenWays(board , n ,i+1);
+        
       //backtracking
          board[i][j] = 0;
     }
     
 }
 
-return false;
+return ways;
 
   }
 
@@ -98,7 +96,7 @@ int main() {
    int board[20][20]={0};
    int n;
    cin>>n;
-   solveNQueen(board, n ,0);
-
+  cout<< NQueenWays(board, n ,0);
+  
     return 0;
 }
